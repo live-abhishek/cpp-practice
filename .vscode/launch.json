@@ -23,6 +23,27 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "name": "Win - (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build_cpp",
+            "program": "${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
         }
     ]
 }
